@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fake Store</string>
+    <string name="title_login">Iniciar Sesión</string>
+</resources>
