@@ -19,20 +19,24 @@
 
         android:textStyle="bold"/>
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/usernameInputLayout"
         app:boxBackgroundMode="none"
         app:hintAnimationEnabled="false"
-        android:hint="Usuario"
+        android:background="@null"
+        app:hintEnabled="false"
+        android:gravity="center"
         app:errorEnabled="true"
         >
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/usernameEditText"
-        android:layout_width="match_parent"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:background="@null"
+        android:hint="Usuario"
+        android:background="@color/gray_500"
+        android:elevation="20dp"
         />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -41,18 +45,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:boxBackgroundMode="none"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+
         app:errorEnabled="true"
-        android:hint="Contraseña">
-        <EditText
+        >
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPassword"
             android:id="@+id/passwordEditText"
             android:background="@android:color/transparent"
-
+            android:hint="Contraseña"
             >
 
-        </EditText>
+        </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginButton"
