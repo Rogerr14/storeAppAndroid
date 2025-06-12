@@ -22,33 +22,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/usernameInputLayout"
-        app:boxBackgroundMode="none"
+        app:boxBackgroundMode="outline"
+        android:backgroundTint="@color/black"
         app:hintAnimationEnabled="false"
-        android:background="@null"
         app:hintEnabled="false"
-        android:gravity="center"
-        app:errorEnabled="true"
+        app:errorEnabled="false"
+        app:boxCornerRadiusBottomEnd="2dp"
+
         >
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Usuario"
-        android:background="@color/gray_500"
-        android:elevation="20dp"
-        />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_500"
+            android:hint="Usuario"
+            android:inputType="text"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordInputLayout"
-        android:layout_width="match_parent"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:boxBackgroundMode="none"
         app:hintAnimationEnabled="false"
         app:hintEnabled="false"
-
         app:errorEnabled="true"
         >
         <com.google.android.material.textfield.TextInputEditText
@@ -56,7 +56,7 @@
             android:layout_height="match_parent"
             android:inputType="textPassword"
             android:id="@+id/passwordEditText"
-            android:background="@android:color/transparent"
+            android:background="@color/gray_500"
             android:hint="Contraseña"
             >
 
